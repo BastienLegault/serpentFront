@@ -1,0 +1,20 @@
+<div class="p-3">
+    <form class="flex flex-col">
+        <div>
+            <label>Nom : </label>
+            <input name="nomInput" [(ngModel)]="namePlayer" class="marge texte">
+        </div>
+        <div>
+            <label>Classement : </label>
+            <input name="rankInput" type="number" [(ngModel)]="rankPlayer"class="marge chiffre">
+        </div>
+        <div class="flex flex-row-reverse">
+            <div class="px-1">
+                <button (click)="close()"class="btn btn-primary">Annuler</button>
+            </div>
+            <div class="px-1">
+                <button [disabled]="namePlayer == '' || rankPlayer == 0" (click)="onModify()"class="btn btn-primary">Modifier le joueur</button>
+            </div>
+        </div>
+    </form>
+</div>

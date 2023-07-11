@@ -1,0 +1,30 @@
+.joueur {
+    width:100%;
+    box-sizing: border-box;
+}
+
+.listeJoueur{
+    width:50%;
+    margin-right: 2%;
+}
+
+.result{
+    width:50%;
+}
+
+.marge{
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.chiffre{
+    width:50px;
+}
+.texte{
+    width:150px;
+}
+
+#col {
+    column-count: 2;
+}
